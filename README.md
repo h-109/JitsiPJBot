@@ -73,7 +73,7 @@ Note: If the above command gives an error, manually run:
 >$ pip3 install pykeybasebot asyncio
 
 Change the PAPER_KEY and USERNAME strings in the code.
-Hint: Use >$ sudo nano script_name.py< to access the editor.
+Hint: Use *$ sudo nano script_name.py* to access the editor.
 
 ## Step #4:
 Run the script
