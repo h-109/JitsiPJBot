@@ -25,28 +25,28 @@ Below command adds repo into our machine to fetch packages from.
 
 Scans for any system changes in repos. Updates them. It’s a sort of refresh for installer.
 
- sudo apt-get update
+> sudo apt-get update
 
 This is the actual command to install python. 
 
- sudo apt-get install python3.8 -y
+> sudo apt-get install python3.8 -y
 
 Below commands tell the system that we have these alternatives for Python older version.
 
- sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
- sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 2
+> sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
+> sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 2
 Finally the below command changes the default used version of python.
 
- sudo update-alternatives --config python3
+> sudo update-alternatives --config python3
 Choose option 2 in the above step. That makes your default Python interpreter as 3.8.x version.
 
 Now check the version:
- python3 -V
+> python3 -V
 Congrats! You have done the most essential step of this tutorial. Brace yourself.
 
 Then install pip3 for obtaining python packages
 
-$ sudo apt install python3-pip
+>$ sudo apt install python3-pip
 
 
 ## Step #2:
@@ -55,29 +55,29 @@ Install Keybase
 
 Follow below commands to install it.
 
-curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
-sudo apt install ./keybase_amd64.deb
+>curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
+>sudo apt install ./keybase_amd64.deb
 
 ## Step #3:
 Clone github repo for code.
 
-$ git clone “https://github.com/h-109/JitsiPJBot.git”
+>$ git clone “https://github.com/h-109/JitsiPJBot.git”
 
 Navigate to the folder downloaded. cd folder_name
 
 Install required modules:
-$ pip3 install -r requirements.txt
+>$ pip3 install -r requirements.txt
 
 Note: If the above command gives an error, manually run:
-$ pip3 install pykeybasebot asyncio
+>$ pip3 install pykeybasebot asyncio
 
 Change the PAPER_KEY and USERNAME strings in the code.
-Hint: Use $ sudo nano script_name.py to access the editor.
+Hint: Use >$ sudo nano script_name.py< to access the editor.
 
 ## Step #4:
 Run the script
 
-$ python3 script_name.py
+>$ python3 script_name.py
 
 Test the bot by sending the keyphrase we set in the script to bot_username
 Keyphrase: !jitsipj
@@ -86,7 +86,7 @@ If you can see automated reply, it’s awesome.
 
 Now, make sure this script always runs on the server, in the background. For this, use below command:
 
-$ nohup python3 script_name.py &
+>$ nohup python3 script_name.py &
 
 ## 🎉 Congratulations on successful deployment of keybase bot.
 
