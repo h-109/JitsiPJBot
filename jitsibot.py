@@ -7,13 +7,7 @@ import random
 
 import pykeybasebot.types.chat1 as chat1
 from pykeybasebot import Bot
-'''
-inputs = None
-with open('MyPack.yaml', 'r') as stream:
-    inputs = yaml.safe_load(stream)
 
-packs = inputs['Packages']
-keyphrase = inputs['KeyPhrase'].lower()'''
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -25,7 +19,7 @@ if "win32" in sys.platform:
 
 listen_options = {
     "local": True,
-    "wallet": True,
+    "wallet": False,
     "dev": True,
     "hide-exploding": False,
     "convs": True,
@@ -35,7 +29,7 @@ listen_options = {
 
 
 def makeString(kp_str):
-    pack_str = 'Here\'s your meet link: \npraja.sytes.net/'
+    pack_str = 'Here\'s your meet link: \n your.domain.com/'
     temp=kp_str.split()
     print(temp)
     if(len(temp)==1):
@@ -49,6 +43,8 @@ async def handler(bot, event):
     if event.msg.content.type_name != chat1.MessageTypeStrings.TEXT.value:
         return
     msg = str(event.msg.content.text.body).lower()
+    
+    #this is keyphrase change the below variable to any trigger you wish to use
     kp="!jitsipj"
     if kp in msg:
         channel = event.msg.channel
@@ -69,4 +65,3 @@ bot = Bot(
 )
 
 asyncio.run(bot.start(listen_options))
-
