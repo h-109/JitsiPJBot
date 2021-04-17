@@ -1,9 +1,9 @@
 # Jitsi Bot for Keybase | Python
 ## Prerequisites: 
-Git
-Python 3.8.x
-Keybase App
-Paper Key of account
+* Git
+* Python 3.8.x
+* Keybase App
+* Paper Key of account
 
 ## How it actually works:
 We set up a separate account for bot. The python program runs on the server and always listens to messages that the bot_username gets and replies if conditions are met.
@@ -21,7 +21,7 @@ Install Python 3.8.x and activate it as the default interpreter.
 Follow below commands to achieve the requirement:
 Below command adds repo into our machine to fetch packages from.
 
- sudo add-apt-repository ppa:deadsnakes/ppa
+> sudo add-apt-repository ppa:deadsnakes/ppa
 
 Scans for any system changes in repos. Updates them. It’s a sort of refresh for installer.
 
