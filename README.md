@@ -1,11 +1,11 @@
-Jitsi Bot for Keybase | Python
-Prerequisites: 
+# Jitsi Bot for Keybase | Python
+## Prerequisites: 
 Git
 Python 3.8.x
 Keybase App
 Paper Key of account
 
-How it actually works:
+## How it actually works:
 We set up a separate account for bot. The python program runs on the server and always listens to messages that the bot_username gets and replies if conditions are met.
 The program uses ‘paper key’ to login and verify.
 
@@ -13,7 +13,7 @@ The program uses ‘paper key’ to login and verify.
 By default in most of the servers, we have Python 3.6.x installed.
 You can check this with this command: python3 -V 
 
-Step #1:
+## Step #1:
 
 Install Python 3.8.x and activate it as the default interpreter.
 (All commands require root access. Use sudo when you are logged in as a normal user.)
@@ -49,7 +49,7 @@ Then install pip3 for obtaining python packages
 $ sudo apt install python3-pip
 
 
-Step #2:
+## Step #2:
 
 Install Keybase
 
@@ -58,7 +58,7 @@ Follow below commands to install it.
 curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
 sudo apt install ./keybase_amd64.deb
 
-Step #3:
+## Step #3:
 Clone github repo for code.
 
 $ git clone “https://github.com/h-109/JitsiPJBot.git”
@@ -74,7 +74,7 @@ $ pip3 install pykeybasebot asyncio
 Change the PAPER_KEY and USERNAME strings in the code.
 Hint: Use $ sudo nano script_name.py to access the editor.
 
-Step #4:
+## Step #4:
 Run the script
 
 $ python3 script_name.py
@@ -88,7 +88,7 @@ Now, make sure this script always runs on the server, in the background. For thi
 
 $ nohup python3 script_name.py &
 
-🎉 Congratulations on successful deployment of keybase bot.
+## 🎉 Congratulations on successful deployment of keybase bot.
 
 Feel free to tweak the code.
 
@@ -96,4 +96,4 @@ Source Links:
 Python 3.8 Installation and activation Guide: https://www.itsupportwale.com/blog/how-to-upgrade-to-python-3-8-on-ubuntu-18-04-lts/
 
 
-Drop a Hi 👋 on Keybase @h109 for any queries.
+### Drop a Hi 👋 on Keybase @h109 for any queries.
